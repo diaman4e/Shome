@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script defer src="../components/account.js"></script>
+    <link rel="stylesheet" href="../../css/components/header.css" />
+    <link rel="stylesheet" href="../../css/cssPage/loginAndRegister.css" />
+    <link rel="stylesheet" href="../../css/homeOne.css" />
+    <script defer src="../../assets/components/menu.js"></script>
+    <script defer src="../../assets/components/button.js"></script>
+    <script defer src="../../assets/components/exclusive.js"></script>
+    <script defer src="../../assets/components/cont.js"></script>
+    <script defer src="../../assets/components/featuredItems.js"></script>
+    <script defer src="../../assets/components/onlineStore.js"></script>
+    <script src="../components/login.js"></script>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-bag.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+    <link rel="stylesheet" href="../../css/cssPage/account.css">
+</head>
+<body>
+    <div class="headerContainer">
+        <header>
+          <div class="headerContent">
+            <div class="contLogo">
+              <img src="../../assets/image/logo.webp" alt="logo"/>
+            </div>
+            <div class="headerSearchBox">
+              <input
+                type="search"
+                placeholder="Search"
+                name="search"
+                class="search"
+              />
+              <div class="searchBtn">
+                <i class="gg-search" style="color: #fffc"></i>            
+              </div>
+            </div>
+            <div class="itemsIconBox">
+              <div style="color: rgb(164, 161, 161)" class="heart">
+                <i class='fa fa-heart-o' style="font-size: 25px;"></i>
+              </div>
+              <div onclick="showCard()" style="color: rgb(164, 161, 161);"  class="shoppingBag">
+                <i class="gg-shopping-bag"></i>   
+              </div>
+            </div>
+          </div>
+          <div class="navigationConatiner" id="navigationConatiner"></div>
+        </header>
+      </div>
+
+      <main>
+        <div class="account-container">
+            <div class="options-container">
+                <div class="myPhoto">
+                    <img src="" alt="">
+                    <div id="imgBox"></div>
+                </div>
+                <ul class="options">
+                    <li class="options-control">Accont</li>
+                    <li class="options-control">Password</li>
+                    <li class="options-control">Security</li>
+                    <li class="options-control">Application</li>
+                    <li class="options-control">Notification</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Account Settings</h2>
+                <div class="input-container">
+                    <div class="intput-control">
+                        <p>First Name</p>
+                        <input type="text" name="" value="">
+                    </div>
+                    <div class="intput-control">
+                        <p>Last Name</p>
+                        <input type="text" name="" value="">
+                    </div>
+                    <div class="intput-control">
+                        <p>Email</p>
+                        <input type="text" name="" value="">
+                    </div>
+                    <div class="intput-control">
+                        <p>City</p>
+                        <input type="text" name="" value="">
+                    </div>
+                    <div class="intput-control">
+                        <p>Phone number</p>
+                        <input type="text" name="" value="">
+                    </div>
+                    <div class="intput-control">
+                        <p>Designation</p>
+                        <input type="text" name="" value="">
+                    </div>
+                    <div >
+                        <p>bio</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div id="imgBox"></div>
+          <h2 id="name"></h2>
+          <h4 id="email"></h4>
+          
+          <button onclick="exit()">exit</button>
+      </main>
+
+</body>
+</html>
